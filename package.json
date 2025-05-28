@@ -8,8 +8,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bootstrap": "^5.3.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielaraux/exo-login-formulaire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielaraux/exo-login-formulaire/issues"
+  },
+  "homepage": "https://github.com/danielaraux/exo-login-formulaire#readme",
+  "description": ""
 }
