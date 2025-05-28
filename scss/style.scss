@@ -1,3 +1,35 @@
+@font-face {
+    font-family: robotoflex;
+    src: url(../font/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+
+}
+
+body {
+    font-family: robotoflex;
+    font-weight: 600;
+    background-image: url(/img/fond-fitness.jpg);
+    background-size: cover;
+    color: white;
+}
+
 .logo-principal {
     width: 15em;
+
+    @media (max-width: 414px) {
+        width: 100vw;
+        height: 22vh;
+    }
+}
+
+.navbar {
+    background-color: lightblue;
+}
+
+.modal-header {
+    background: linear-gradient(9deg, rgba(228, 86, 36, 1) 0%, rgba(113, 40, 32, 1) 29%, rgba(5, 16, 46, 1) 49%, rgba(8, 30, 77, 1) 72%, rgba(10, 52, 124, 1) 100%);
+    color: white;
+}
+
+.formulaire-inscription {
+    background: linear-gradient(9deg, rgba(228, 86, 36, 1) 0%, rgba(113, 40, 32, 1) 29%, rgba(5, 16, 46, 1) 49%, rgba(8, 30, 77, 1) 72%, rgba(10, 52, 124, 1) 100%);
 }
