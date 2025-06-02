@@ -1,0 +1,59 @@
+@font-face {
+  font-family: robotoflex;
+  src: url(../font/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+}
+body {
+  font-family: robotoflex;
+  font-weight: 600;
+  background-image: url(/img/fond-fitness.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.logo-principal {
+  width: 15em;
+}
+@media (max-width: 414px) {
+  .logo-principal {
+    width: 100vw;
+    height: 22vh;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 415px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  background-color: #79818c;
+}
+
+.redstar {
+  color: red;
+}
+
+.modal-header {
+  background: linear-gradient(9deg, rgb(228, 86, 36) 0%, rgb(113, 40, 32) 29%, rgb(5, 16, 46) 49%, rgb(8, 30, 77) 72%, rgb(10, 52, 124) 100%);
+  color: white;
+}
+
+.formulaire-inscription {
+  background: linear-gradient(9deg, rgb(228, 86, 36) 0%, rgb(113, 40, 32) 29%, rgb(5, 16, 46) 49%, rgb(8, 30, 77) 72%, rgb(10, 52, 124) 100%);
+  width: 50%;
+}
+@media (max-width: 414px) {
+  .formulaire-inscription {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
