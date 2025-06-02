@@ -20,8 +20,24 @@ body {
   }
 }
 
-.navbar {
-  background-color: lightblue;
+@media (max-width: 414px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 415px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  background-color: #79818c;
+}
+
+.redstar {
+  color: red;
 }
 
 .modal-header {
@@ -31,6 +47,13 @@ body {
 
 .formulaire-inscription {
   background: linear-gradient(9deg, rgb(228, 86, 36) 0%, rgb(113, 40, 32) 29%, rgb(5, 16, 46) 49%, rgb(8, 30, 77) 72%, rgb(10, 52, 124) 100%);
+  width: 50%;
+}
+@media (max-width: 414px) {
+  .formulaire-inscription {
+    width: 100%;
+    margin-bottom: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

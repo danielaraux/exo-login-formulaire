@@ -21,8 +21,25 @@ body {
     }
 }
 
-.navbar {
-    background-color: lightblue;
+.navbar-desktop {
+
+    @media (max-width: 414px) {
+        display: none;
+    }
+}
+
+.navbar-mobile {
+    @media (min-width: 415px) {
+        display: none;
+    }
+}
+
+.navbar-mobile {
+    background-color: #79818c;
+}
+
+.redstar {
+    color: red;
 }
 
 .modal-header {
@@ -32,4 +49,10 @@ body {
 
 .formulaire-inscription {
     background: linear-gradient(9deg, rgba(228, 86, 36, 1) 0%, rgba(113, 40, 32, 1) 29%, rgba(5, 16, 46, 1) 49%, rgba(8, 30, 77, 1) 72%, rgba(10, 52, 124, 1) 100%);
+    width: 50%;
+
+    @media (max-width:414px) {
+        width: 100%;
+        margin-bottom: 2em;
+    }
 }

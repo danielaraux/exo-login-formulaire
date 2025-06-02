@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body class="">
+<body class="d-flex flex-column min-vh-100">
 
 
 
@@ -25,7 +25,8 @@
                         alt="logo-ironclad-fitness"></a>
 
 
-                <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+                <!-- NAVBAR Desktop -->
+                <nav class="navbar navbar-desktop navbar-expand-lg bg-body-tertiary w-100">
                     <div class="container-fluid m-2">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -75,7 +76,7 @@
 
 
 
-                                            <form>
+                                            <form action="bonjour.html">
                                                 <div class="mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">Adresse
                                                         e-mail</label>
@@ -98,17 +99,102 @@
                                             </form>
                                         </div>
 
+
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+
                     </div>
+                </nav>
             </div>
-        </div>
+
         </div>
 
+
+        <!-- Navbar mobile -->
+        <nav class="navbar navbar-mobile navbar-expand-lg w-100">
+            <div class="container-fluid m-2">
+                <button class="navbar-toggler border border-dark border-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item m-2">
+                            <a class="nav-link active" aria-current="page" href="#">Trouver un
+                                club</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link active" aria-current="page" href="#">Tarifs</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link active" aria-current="page" href="#">Installations et
+                                matériel</a>
+                        </li>
+                        <li class="nav-item dropdown m-2">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Parcours d'entraînement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Alimentation</a></li>
+                                <li><a class="dropdown-item" href="#">Entraînement</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Modal -->
+                    <a href="inscription.html"><button type="button" class="btn btn-primary m-2">S'inscrire</button></a>
+                    <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">Se connecter</button>
+
+
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <form action="bonjour.html">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Adresse
+                                                e-mail</label>
+                                            <input type="email" class="form-control mb-3"
+                                                placeholder="Entrez votre adresse e-mail..." id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" required>
+
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Mot de
+                                                    passe</label>
+                                                <input type="password" class="form-control"
+                                                    placeholder="Entrez votre mot de passe..."
+                                                    id="exampleInputPassword1" required>
+                                            </div>
+                                            <div class="mb-3 form-check">
+
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Se
+                                                connecter</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </nav>
+
     </header>
 
 
@@ -120,57 +206,56 @@
 
         <h1 class="text-center mt-5">Formulaire d'inscription</h1>
 
-        <form class="formulaire-inscription w-50 mx-auto mt-3 p-4 rounded-3" action="confirmation.html" novalidate>
+        <form class="formulaire-inscription mx-auto mt-3 p-4 rounded-3" action="confirmation.html">
             <div class="d-none formulaire-inscription w-75 mx-auto mt-3 p-4 rounded-3"></div>
             <div class="mb-1">
-                <label for="exampleInputEmail1" class="form-label mt-2">Nom</label>
-                <input type="email" class="form-control" placeholder="Entrez votre nom..." id="exampleInputEmail1"
+                <label for="nom" class="form-label mt-2">Nom <span class="redstar">*</span></label>
+                <input type="text" class="form-control" placeholder="Entrez votre nom..." id="nom"
                     aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
-                <label for="exampleInputEmail1" class="form-label mt-2">Prénom</label>
-                <input type="email" class="form-control" placeholder="Entrez votre prénom..." id="exampleInputEmail1"
+                <label for="prenom" class="form-label mt-2">Prénom <span class="redstar">*</span></label>
+                <input type="text" class="form-control" placeholder="Entrez votre prénom..." id="prenom"
                     aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
-                <label for="exampleInputEmail1" class="form-label mt-2">Adresse e-mail</label>
-                <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail..."
-                    id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <label for="email" class="form-label mt-2">Adresse e-mail <span class="redstar">*</span></label>
+                <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail..." id="email"
+                    aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
-                <label for="exampleInputPassword1" class="form-label mt-2">Mot de passe</label>
-                <input type="password" class="form-control" placeholder="Entrez votre mot de passe..."
-                    id="exampleInputPassword1" required>
+                <label for="password" class="form-label mt-2">Mot de passe <span class="redstar">*</span></label>
+                <input type="password" class="form-control" placeholder="Entrez votre mot de passe..." id="password"
+                    required>
             </div>
 
             <div class="mb-1">
-                <label for="exampleInputEmail1" class="form-label mt-2">Téléphone</label>
-                <input type="tel" class="form-control" placeholder="Entrez votre numéro de téléphone..."
-                    id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <label for="telephone" class="form-label mt-2">Téléphone <span class="redstar">*</span></label>
+                <input type="tel" class="form-control" placeholder="Entrez votre numéro de téléphone..." id="telephone"
+                    aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
-                <label for="exampleInputPassword1" class="form-label mt-2">Adresse</label>
-                <input type="email" class="form-control" placeholder="Entrez votre adresse..."
-                    id="exampleInputPassword1" required>
+                <label for="adresse" class="form-label mt-2">Adresse <span class="redstar">*</span></label>
+                <input type="text" class="form-control" placeholder="Entrez votre adresse..." id="adresse" required>
             </div>
 
             <div class="mb-1">
                 <div>
-                    <label for="exampleInputPassword1" class="form-label mt-2">Comment avez-vous connu le site ?</label>
+                    <label for="connu" class="form-label mt-2">Comment avez-vous connu le site ?</label>
                 </div>
 
                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" required>
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
                     <label class="btn btn-outline-primary" for="btncheck1">Via internet</label>
 
-                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" required>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
                     <label class="btn btn-outline-primary" for="btncheck2">Via le bouche à oreilles</label>
 
-                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" required>
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
                     <label class="btn btn-outline-primary" for="btncheck3">Via les publicitées</label>
                 </div>
             </div>
@@ -178,18 +263,18 @@
 
             <div class="mb-1">
                 <div>
-                    <label for="exampleInputPassword1" class="form-label mt-2">Vos préférences de communication</label>
+                    <label for="preferences" class="form-label mt-2">Vos préférences de communication <span
+                            class="redstar">*</span></label>
                 </div>
 
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
-                        required>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                     <label class="btn btn-outline-primary" for="btnradio1">SMS</label>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" required>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
                     <label class="btn btn-outline-primary" for="btnradio2">Mail</label>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" required>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
                     <label class="btn btn-outline-primary" for="btnradio3">Je ne souhaite pas être contacté</label>
                 </div>
 
@@ -198,7 +283,8 @@
 
                 <div class="m-2 mt-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                    <label class="form-check-label" for="exampleCheck1">J'ai lu, j'ai tout compris</label>
+                    <label class="form-check-label" for="exampleCheck1">J'ai lu, j'ai tout compris <span
+                            class="redstar">*</span></label>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">S'inscrire</button>
 
