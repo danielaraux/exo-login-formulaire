@@ -206,48 +206,49 @@
 
         <h1 class="text-center mt-5">Formulaire d'inscription</h1>
 
-        <form class="formulaire-inscription mx-auto mt-3 p-4 rounded-3" action="confirmation.html">
+        <form class="formulaire-inscription mx-auto mt-3 mb-5 p-4 rounded-3" action="confirmation.html">
             <div class="d-none formulaire-inscription w-75 mx-auto mt-3 p-4 rounded-3"></div>
             <div class="mb-1">
                 <label for="nom" class="form-label mt-2">Nom <span class="whitestar">*</span></label>
-                <input type="text" class="form-control" placeholder="Entrez votre nom..." id="nom"
+                <input type="text" class="form-control" placeholder="Entrez votre nom..." name="nom" id="nom"
                     aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
                 <label for="prenom" class="form-label mt-2">Prénom <span class="whitestar">*</span></label>
-                <input type="text" class="form-control" placeholder="Entrez votre prénom..." id="prenom"
+                <input type="text" class="form-control" placeholder="Entrez votre prénom..." name="prenom" id="prenom"
                     aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
                 <label for="email" class="form-label mt-2">Adresse e-mail <span class="whitestar">*</span></label>
-                <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail..." id="email"
-                    aria-describedby="emailHelp" required>
+                <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail..." name="email"
+                    id="email" aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
                 <label for="password" class="form-label mt-2">Mot de passe <span class="whitestar">*</span></label>
-                <input type="password" class="form-control" placeholder="Entrez votre mot de passe..." id="password"
-                    required>
+                <input type="password" class="form-control" placeholder="Entrez votre mot de passe..." name="password"
+                    id="password" required>
             </div>
 
             <div class="mb-1">
                 <label for="password" class="form-label mt-2">Confirmation du Mot de passe <span
                         class="whitestar">*</span></label>
                 <input type="password" class="form-control" placeholder="Entrez de nouveau votre mot de passe..."
-                    id="password" required>
+                    name="password" id="password" required>
             </div>
 
             <div class="mb-1">
                 <label for="telephone" class="form-label mt-2">Téléphone <span class="whitestar">*</span></label>
-                <input type="tel" class="form-control" placeholder="Entrez votre numéro de téléphone..." id="telephone"
-                    aria-describedby="emailHelp" required>
+                <input type="tel" class="form-control" placeholder="Entrez votre numéro de téléphone..."
+                    name="telephone" id="telephone" aria-describedby="emailHelp" required>
             </div>
 
             <div class="mb-1">
                 <label for="adresse" class="form-label mt-2">Adresse <span class="whitestar">*</span></label>
-                <input type="text" class="form-control" placeholder="Entrez votre adresse..." id="adresse" required>
+                <input type="text" class="form-control" placeholder="Entrez votre adresse..." name="adresse"
+                    id="adresse" required>
             </div>
 
             <div class="mb-1">
@@ -256,13 +257,13 @@
                 </div>
 
                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <input type="checkbox" class="btn-check" name="btncheck1" id="btncheck1" autocomplete="off">
                     <label class="btn btn-outline-primary text-light" for="btncheck1">Via internet</label>
 
-                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <input type="checkbox" class="btn-check" name="btncheck2" id="btncheck2" autocomplete="off">
                     <label class="btn btn-outline-primary text-light" for="btncheck2">Via le bouche à oreilles</label>
 
-                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <input type="checkbox" class="btn-check" name="btncheck3" id="btncheck3" autocomplete="off">
                     <label class="btn btn-outline-primary text-light" for="btncheck3">Via les publicitées</label>
                 </div>
             </div>
@@ -275,13 +276,13 @@
                 </div>
 
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <input type="radio" class="btn-check" name="btnradio1" id="btnradio1" autocomplete="off" checked>
                     <label class="btn btn-outline-primary text-light" for="btnradio1">SMS</label>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio2" autocomplete="off">
                     <label class="btn btn-outline-primary text-light" for="btnradio2">Mail</label>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3" autocomplete="off">
                     <label class="btn btn-outline-primary text-light" for="btnradio3">Je ne souhaite pas être
                         contacté</label>
                 </div>
@@ -290,7 +291,7 @@
                 <div class="m-3">* Champ obligatoire</div>
 
                 <div class="m-2 mt-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <input type="checkbox" class="form-check-input" name="checkbox" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1">J'ai lu, j'ai tout compris <span
                             class="whitestar">*</span></label>
                 </div>
